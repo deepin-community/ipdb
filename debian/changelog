@@ -1,0 +1,125 @@
+ipdb (0.13.9-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Andrey Rahmatullin ]
+  * New upstream version.
+  * Switch d/watch to Github tarballs.
+  * Bump Standards-Version to 4.6.0.
+  * Add new build and runtime deps on python3-toml and python3-decorator.
+  * Add autopkgtests.
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Wed, 13 Oct 2021 20:16:50 +0500
+
+ipdb (0.13.3-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Andrey Rahmatullin ]
+  * New upstream version
+  * Bump Standards-Version to 4.5.0.
+  * Switch to the debhelper compat level 13
+  * Switch to enabling the python3 dh addon via B-D.
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Sun, 19 Jul 2020 21:43:02 +0500
+
+ipdb (0.12.2-2) unstable; urgency=medium
+
+  * Team upload.
+  * Drop python2 support; Closes: #936739
+
+ -- Sandro Tosi <morph@debian.org>  Sun, 15 Dec 2019 16:27:00 -0500
+
+ipdb (0.12.2-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+
+  [ Andrey Rahmatullin ]
+  * New upstream version
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Sun, 17 Nov 2019 15:38:57 +0500
+
+ipdb (0.11-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+
+  [ Andrey Rahmatullin ]
+  * New upstream version
+  * Switch to the debhelper compat level 12
+  * Replace debian/compat with B-D: debhelper-compat
+  * Bump Standards-Version to 4.3.0 (no change needed)
+  * Make B-D on python-all unversioned
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Sat, 26 Jan 2019 16:28:28 +0500
+
+ipdb (0.10.3-1) unstable; urgency=medium
+
+  * New upstream version (Closes: #887096)
+  * Switch to the debhelper compat level 11
+  * Bump Standards-Version to 4.1.3 (no change needed)
+  * Add Rules-Requires-Root: no
+  * Use HTTPS in debian/watch
+  * Add explicit Depends on ipython/ipython3
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Thu, 18 Jan 2018 22:41:43 +0500
+
+ipdb (0.10.1-1) unstable; urgency=medium
+
+  * New upstream version
+    - adds IPython 5.0 support
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Fri, 05 Aug 2016 21:10:29 +0500
+
+ipdb (0.10.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+
+  [ Andrey Rahmatullin ]
+  * New upstream release
+  * Update d/copyright as the upstream license was changed from GPL-2+ to
+    BSD-3
+  * Fix d/watch to search for .tar.* files
+  * Bump Standards-Version to 3.9.8 (no change needed)
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Mon, 02 May 2016 18:59:20 +0500
+
+ipdb (0.8.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fix the watch file to use pypi.debian.net
+  * Bump Standards-Version to 3.9.6 (no change needed)
+  * Drop the AUTHOR sections from manpages, per man-pages(7)
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Mon, 24 Aug 2015 00:20:18 +0500
+
+ipdb (0.8-1) unstable; urgency=low
+
+  [ Andrey Rahmatullin ]
+  * New upstream release
+  * Change the license to GPL-2+ per the upstream clarification
+  * Bump Standards-Version to 3.9.4 (no change needed)
+  * Update debian/watch to use zip files
+  * Add a Python 3 subpackage
+  * Use pybuild
+  * Update the description
+  * Add copyright information for tests/ to debian/copyright
+
+  [ Jakub Wilk ]
+  * Use canonical URIs for Vcs-* fields.
+
+ -- Andrey Rahmatullin <wrar@wrar.name>  Mon, 14 Oct 2013 23:58:02 +0600
+
+ipdb (0.6.1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #642311)
+
+ -- Andrey Rahmatullin <wrar@wrar.name>  Sun, 24 Jun 2012 23:33:10 +0200

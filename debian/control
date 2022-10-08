@@ -1,0 +1,32 @@
+Source: ipdb
+Section: python
+Priority: optional
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: Andrey Rahmatullin <wrar@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-python3,
+               ipython3 <!nocheck>,
+               python3-all,
+               python3-decorator <!nocheck>,
+               python3-setuptools,
+               python3-toml (>= 0.10.2) <!nocheck>,
+Standards-Version: 4.6.0
+Homepage: https://github.com/gotcha/ipdb
+Vcs-Git: https://salsa.debian.org/python-team/packages/ipdb.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/ipdb
+Rules-Requires-Root: no
+
+Package: python3-ipdb
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}, python3-pkg-resources, ipython3,
+ python3-decorator, python3-toml (>= 0.10.2)
+Description: IPython-based pdb replacement (Python 3 version)
+ ipdb is a replacement for pdb Python debugger, adding IPython features (tab
+ completion, syntax highlighting, better tracebacks, better introspection) to
+ it.
+ .
+ ipdb contains replacements for all functions from the pdb stdlib module. It
+ also contains the ipdb3 binary which can be used instead of the pdb3 binary to
+ debug standalone scripts.
+ .
+ This package contains the Python 3 version of the module.

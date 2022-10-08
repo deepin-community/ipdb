@@ -1,0 +1,6 @@
+#!/usr/bin/make -f
+
+export PYBUILD_DESTDIR_python3=debian/python3-ipdb/
+
+%:
+	dh $@ --buildsystem=pybuild

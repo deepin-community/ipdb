@@ -1,0 +1,3 @@
+version=4
+https://github.com/gotcha/ipdb/releases \
+/gotcha/ipdb/archive.*/([\d\.]+)\.tar\.gz

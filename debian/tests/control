@@ -1,0 +1,7 @@
+Tests: unittests
+Depends:
+ python3-ipdb,
+ python3-all,
+ python3-decorator,
+ python3-pytest,
+ python3-toml (>= 0.10.2),
